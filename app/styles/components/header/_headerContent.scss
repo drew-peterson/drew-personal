@@ -7,13 +7,27 @@
 
 
 #mainHeader .headerContent {
+	@include desktop {
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		display: flex;
+		padding-right: 75px;
+	}
+
+	.contentWrapper {
+		@include desktop {
+			margin-top: auto;
+		}
+	}
+
 	.img{
 		width: 40%;
-		max-width: 150px;
-
-		height: 40%;
 		margin-bottom: 10px;
 		border-radius: 50%;
+
+		@include desktop {
+			width: 50%;
+		}
 	}
 	
 	.name,
@@ -24,9 +38,16 @@
 
 
 	.name{
+		@include desktop {
+			font-size: $lg;	
+		}
 	}
 
 	.title{
-		font-size: 1rem;
+		padding-top: $msm;
+		@include desktop {
+			font-size: 1.2rem;
+			padding-bottom: $msm;
+		}
 	}
 }
