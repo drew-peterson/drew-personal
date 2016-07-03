@@ -3,7 +3,7 @@ angular.module('stateRouter',['ui.router'])
 	$urlRouterProvider.otherwise('/');   
 
 	$stateProvider
-		.state('home', {
+		.state('home', { 
 			url: '/',
 			templateUrl: '../views/main.html'   
 		}) 

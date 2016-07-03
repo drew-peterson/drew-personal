@@ -1,2 +1,8 @@
 'use strict';
-angular.module('DrewPersonalSiteApp',['stateRouter', 'MainHeader', 'ngAnimate']);   
+angular.module('DrewPersonalSiteApp',
+	[
+	'stateRouter', 
+	'MainHeader',
+	'Projects', 
+	'ngAnimate'
+	]);   

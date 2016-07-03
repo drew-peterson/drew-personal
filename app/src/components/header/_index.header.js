@@ -1,1 +1,1 @@
-angular.module('MainHeader',[]); 
+angular.module('MainHeader',[]);  
