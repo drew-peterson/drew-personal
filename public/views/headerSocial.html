@@ -1,3 +1,8 @@
-<ul class="headerSocial">
-	<li ng-repeat="icon in HS.socialIcons">{{icon.url}}</li>
-</ul>
+<div class="headerSocial">
+	<ul class="iconWrap">
+		<li class="icon" ng-click="HS.selectDetail($index)" ng-repeat="icon in HS.socialIcons track by $index">{{icon.url}}</li>
+	</ul>
+
+	<!-- icon-details -->
+	<div class="icon-details">{{HS.detail}}</div> 
+</div>

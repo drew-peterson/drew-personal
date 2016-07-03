@@ -11,5 +11,5 @@ angular.module('MainHeader')
 		},
 		controllerAs: 'HC',
 		templateUrl: '../views/headerContent.html' 
-	}
+	} 
 })
