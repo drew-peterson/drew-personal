@@ -5,9 +5,11 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	@include box-shadow();
+
+	.iconWrap {
+		display: flex;
+		justify-content: space-between;
+	}
 
 	.icon {
 		background: gray;
@@ -41,3 +43,28 @@
 		}
 	}
 }
+
+
+#mainHeader .headerSocial .icon-details {
+	background: $orange;
+	color: white;
+	height: 0px;
+	overflow: hidden;
+	line-height: 40px;
+	padding: 0 10px;
+	transition: 0.35s all ease-in-out;
+
+	&.show {
+		height: 40px;
+	}
+	&.show.show-add {
+		height: 0px;
+	}
+
+	&.show.show-add.show-add-active {
+		height: 40px;
+	}
+}
+
+
+
