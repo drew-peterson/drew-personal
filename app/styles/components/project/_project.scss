@@ -34,16 +34,18 @@
 	bottom: 0px;
 	padding: 10px;
 	@include hover-shadow();
+	text-align: center;
 	
 	.name {
 		font-size: 1.5rem;
-		color: $black;
+		color: $blue;
 		font-weight: bold;
 		// text-transform: uppercase;
 	}
 	.description {
 		line-height: 1.25;
 		padding: $med 0;
+		color: $gray;
 	}
 
 	&:after {
@@ -79,10 +81,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
 	.tag {
 		display: inline-block;
 		padding: $sm $msm;
-		background: $orange;
+		background: $blue;
 		color: $white;
 		margin-bottom: $sm;
 		border-bottom: 3px solid $gray;
