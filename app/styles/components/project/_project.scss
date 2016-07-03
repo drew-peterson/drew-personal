@@ -1,13 +1,12 @@
 .main-content {
-	padding: 20px;
 }
 
 
 
 .project {
 	background: $white;
-	height: 350px;
-	margin-bottom: $med;
+	height: 400px;
+	margin-bottom: $lg;
 }
 
 .project .contentWrapper {
@@ -26,29 +25,72 @@
 
 
 .project .content {
+	height: 270px;
 	background: $white;
 	position: absolute;
 	width: 90%;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 0;
-	height: 200px;
-	padding: 20px 20px 0px;
+	bottom: 0px;
+	padding: 10px;
 	@include hover-shadow();
 	
-	h3 {
-		font-size: $msm;
-		word-wrap: wrap;
+	.name {
+		font-size: 1.5rem;
+		color: $black;
+		font-weight: bold;
+		// text-transform: uppercase;
+	}
+	.description {
+		line-height: 1.25;
+		padding: $med 0;
 	}
 
 	&:after {
-		content: '';
+		// content: '';
 		display: block;
 		position: absolute;
 		left: -15px;
 		right: -15px;
-		bottom: -15px;
+		bottom: -20px;
 		height: 20px;
-		background: white;
+		background: $white;
 	}
 }
+
+.project .content .iconWrap {
+	padding: $msm 0;
+	.icon {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		background: $lightGray;
+		border-radius: 50%;
+		color: $white;
+	}
+}
+
+
+
+// tags
+.project .tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.tag {
+		display: inline-block;
+		padding: $sm $msm;
+		background: $orange;
+		color: $white;
+		margin-bottom: $sm;
+		border-bottom: 3px solid $gray;
+		border-radius: $sm;
+
+	}
+}
+
+
+
+
