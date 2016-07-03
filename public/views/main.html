@@ -1,5 +1,5 @@
 <main-header></main-header>
 
-<div class="main-content" style="margin-top: 40px;">
-	<project-container></project-container>
+<div class="main-content" style="margin-top: 40px;" ng-controller="projects as projectCtrl">
+	<project ng-repeat="project in projectCtrl.projects"></project>
 </div>
