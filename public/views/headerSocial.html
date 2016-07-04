@@ -1,11 +1,13 @@
 <div class="headerSocial" ng-class="{fixed:MH.trigger}">
 
-	<!-- img -->
-	<img class="img" src="{{HS.img}}" alt="drew picture">
+	<div class="headerWrap">
+		<!-- img -->
+		<img class="img" src="{{HS.img}}" alt="drew picture">
 
-	<ul class="iconWrap">
-		<li class="icon" ng-click="HS.selectDetail($index)" ng-repeat="icon in HS.socialIcons track by $index">{{icon.url}}</li>
-	</ul>
+		<ul class="iconWrap">
+			<li class="icon" ng-click="HS.selectDetail($index)" ng-repeat="icon in HS.socialIcons track by $index">{{icon.url}}</li>
+		</ul>
+	</div>
 	<!-- icon-details -->
 	<div class="icon-details">{{HS.detail}}</div> 
 </div>

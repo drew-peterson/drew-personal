@@ -14,16 +14,13 @@ angular.module('MainHeader')
 				var pos = document.body.scrollTop;
 				var social = $('.headerSocial');
 				console.log(pos)
+				
 				// trigger bar
 				if(pos >= 270){
-					// social.addClass('fixed');
-					// $animate.addClass(social,'fixed');
 					scope.$apply(function(){
 						MH.trigger = true;
 					})
 				}else{
-					// social.removeClass('fixed');
-					// $animate.removeClass(social,'fixed');
 					scope.$apply(function(){
 						MH.trigger = false;
 					});
