@@ -4,12 +4,53 @@
 	bottom: -40px;
 	margin: 0;
 	padding: 0;
-	width: 100%; 
+	width: 100%;
 
-	.iconWrap {
+	&.fixed {
+		transition: all 0.5s ease-in-out;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		height: 60px;
+
+		background-color: $blue;
+		padding-left: 20px;
 		display: flex;
-		justify-content: space-between;
-	}
+		align-items: center;
+		@include box-shadow;
+
+		.img {
+			display: inline-block;
+		}
+
+		.iconWrap {
+			width: 50%;
+			margin-left: auto;
+		}
+
+		.icon {
+			background: none !important;
+			color: $white;
+		}
+	} 
+}
+
+
+
+
+
+
+#mainHeader .headerSocial .img {
+	display: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+#mainHeader .headerSocial .iconWrap {
+	display: flex;
+	justify-content: space-between;
 
 	.icon {
 		background: gray;
@@ -28,6 +69,7 @@
 
 			}
 		}
+
 		
 		&:nth-child(1){
 			background: darken(gray, 10%);
