@@ -1,5 +1,16 @@
 <main-header></main-header>
 
 <div class="main-content" style="padding-top: 80px;" ng-controller="projects as projectCtrl"> 
-	<project ng-repeat="project in projectCtrl.projects"></project>
+	
+	<h1>Websites</h1>
+
+	<div class="projectsWrap">
+		<!-- projects -->
+		<project ng-repeat="project in projectCtrl.projects"></project>
+	</div>
+
+	<h1>Side Projects</h1>
+
+	<div class="sideProjectWrap"></div>
+
 </div>

@@ -1,4 +1,13 @@
-.main-content {
+
+
+.projectsWrap {
+	@include tablet {
+		display: flex;
+		width: 90%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 }
 
 
@@ -6,6 +15,12 @@
 .project {
 	background: $white;
 	margin-bottom: $mlg;
+	@include tablet {
+		width: 48%;
+	}
+	@include desktop {
+		width: 32%;
+	}
 }
 
 .project .contentWrapper {
