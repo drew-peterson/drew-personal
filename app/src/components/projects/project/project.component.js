@@ -2,7 +2,7 @@ angular.module("Projects")
 .directive('project', function(){
 	return {
 		replace: true,
-		templateUrl: '../views/project.html',
+		templateUrl: '../views/project.public.html',
 		controllerAs: 'P',
 		controller: function(){
 		}

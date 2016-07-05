@@ -11,6 +11,10 @@
 	background-position: 0% 50%;
 
 
+	@include tablet {
+		height: 55vh;
+	}
+
 	@include desktop {
 		height: 65vh;
 	} 

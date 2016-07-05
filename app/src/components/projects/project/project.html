@@ -1,14 +1,24 @@
 <div class="project">
+
 	<div class="contentWrapper">
-	
 		<!-- image -->
-		<img class='img' src="" alt="">
+		<div class="imgWrap">
+			<div class="img" ng-style="{'background-image': 'url({{project.img}})'}"></div>
+		</div>
 
 		<!-- content -->
 		<div class="content">
-			<h2>Pacifica Coffee</h2>
-			<h3>https:///pacificacofee.com</h3>
-			<h3>www.github.com/weeznog/pacfica-coffee</h3>
+			<h2 class="name">{{project.name}}</h2>
+			
+			<div class="iconWrap">
+				<a class="icon" href="{{project.url.url}}">W</a> 
+				<a class="icon" href="{{project.github.url}}">G</a> 
+			</div>
+
+			<p class="description">{{project.description}}</p>
+			<div class="tags">
+				<span class="tag" ng-repeat="tag in project.tags">{{tag}}</span>
+			</div>
 		</div> 
 	</div>
 </div>

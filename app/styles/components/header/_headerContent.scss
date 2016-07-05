@@ -7,15 +7,15 @@
 
 
 #mainHeader .headerContent {
-	@include desktop {
+	@include tablet {
 		height: 100%;
 		background: rgba(0,0,0,0.5);
 		display: flex;
-		padding-right: 75px;
+		flex-direction: column;
 	}
 
 	.contentWrapper {
-		@include desktop {
+		@include tablet {
 			margin-top: auto;
 		}
 	}
@@ -25,7 +25,7 @@
 		margin-bottom: 10px;
 		border-radius: 50%;
 
-		@include desktop {
+		@include tablet {
 			width: 50%;
 		}
 	}
@@ -38,14 +38,14 @@
 
 
 	.name{
-		@include desktop {
+		@include tablet {
 			font-size: $lg;	
 		}
 	}
 
 	.title{
 		padding-top: $msm;
-		@include desktop {
+		@include tablet {
 			font-size: 1.2rem;
 			padding-bottom: $msm;
 		}

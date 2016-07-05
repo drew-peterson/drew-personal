@@ -45,6 +45,7 @@ gulp.task('styles', function(){
 gulp.task('html', function(){
 	return gulp.src('app/src/components/**/*.html')
 	.pipe(flatten())
+	.pipe(rename({suffix: '.public'}))
 	.pipe(gulp.dest('public/views'))
 })
 

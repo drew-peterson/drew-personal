@@ -40,6 +40,6 @@ angular.module('MainHeader')
 				}
 			},true);
 		},
-		templateUrl: '../views/headerSocial.html' 
+		templateUrl: '../views/headerSocial.public.html' 
 	}
 })

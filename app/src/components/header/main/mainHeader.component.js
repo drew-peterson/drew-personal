@@ -4,7 +4,7 @@ angular.module('MainHeader')
 		replace: true,
 		transclude: true,
 		controllerAs: 'MH',
-		templateUrl: '../views/mainHeader.html',
+		templateUrl: '../views/mainHeader.public.html',
 		controller: function(){
 			var MH = this;
 			MH.trigger;
