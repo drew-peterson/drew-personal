@@ -5,7 +5,6 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	overflow: hidden;
 }
 
 #mainHeader .headerSocial .img {
@@ -31,9 +30,6 @@
 		&:hover {
 			@include desktop {
 				transition: all 0.35s ease-in-out;
-				@include hover-shadow();
-				transform: scale(1.05);
-
 			}
 		}
 
@@ -53,70 +49,6 @@
 	}
 }
 
-
-#mainHeader .headerSocial .icon-details {
-	background: $blue;
-	color: white;
-	height: 0px;
-	overflow: hidden;
-	line-height: 40px;
-	padding: 0 10px;
-	transition: 0.35s all ease-in-out;
-
-	&.show {
-		height: 40px;
-	}
-	&.show.show-add {
-		height: 0px;
-	}
-
-	&.show.show-add.show-add-active {
-		height: 40px;
-	}
-}
-
-
-// trigger
-#mainHeader .headerSocial.fixed {
-		transition: all 0.5s ease-in-out;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-		height: 60px;
-		background-color: $blue;
-		padding: 0 20px;
-		@include box-shadow;
-
-		.headerWrap {
-			display: flex;
-			align-items: center;
-			height: 100%;
-		}
-
-		.img {
-			display: inline-block;
-		}
-
-		.iconWrap {
-			width: 50%;
-			margin-left: auto;
-		}
-
-		.icon {
-			background: none !important;
-			color: $white;
-		}
-
-		.icon-details {
-			position: fixed;
-			left: 0;
-			right: 0;
-			text-align: center;
-			color: $blue;
-			background-color: $white;
-		}
-	} 
 
 
 

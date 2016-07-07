@@ -13,10 +13,10 @@ angular.module('MainHeader')
 			window.addEventListener('scroll', function(){
 				var pos = document.body.scrollTop;
 				var social = $('.headerSocial');
-				console.log(pos)
 				
 				// trigger bar
 				if(pos >= 270){
+					console.log('triggered!')
 					scope.$apply(function(){
 						MH.trigger = true;
 					})

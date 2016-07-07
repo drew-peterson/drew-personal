@@ -1,0 +1,62 @@
+#sideNav {
+	position: relative;
+}
+
+#sideNav .contentWrap {
+	background: $white;
+	padding: 20px 5%;
+	z-index: 1000;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	max-width: 100%;
+	@include box-shadow;
+}
+
+#sideNav .contentWrap .close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+#sideNav .contentWrap .titleWrap {
+	border-bottom: 3px solid $gray;
+	padding-bottom: $msm;
+
+	.img {
+		width: 80px;
+		height: 80px;
+		background: gray;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.title {
+		display: block;
+		font-size: $mlg;
+		color: $blue;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+#sideNav .contactWrap .contacts {
+	margin-top: $med;
+	.contact {
+		background: $lightGray;
+		padding: $msm $med;
+		margin-bottom: $msm;
+		border-bottom: 3px solid $blue;
+		border-radius: 5px;
+	}
+
+	.icon {
+		color: $white;
+	}
+	.link {
+		color: $blue;
+		padding-left: $med;
+	}
+
+}
