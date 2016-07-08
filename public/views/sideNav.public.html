@@ -1,7 +1,11 @@
 <div id="sideNav">
 	
-	<div class="contentWrap">
-		<span class="close">X</span>
+	<!-- hamburger btn -->
+	<i class="material-icons open">&#xE5D2;</i>
+
+	<!-- hidden by default -->
+	<div class="contentWrap hide">
+		<i class="material-icons close">&#xE5CD;</i>
 
 		<div class="titleWrap">
 			<span class="img"></span>
@@ -9,17 +13,17 @@
 		</div>
  
 		<!-- contact -->
-		<div class="contactWrap">
+		<div class="contactWrap"> 
 			<ul class="contacts">
-				<li class="contact" ng-repeat="contact in SN.contacts">
-					<span class="icon">{{contact.icon}}</span>
+				<li class="contact" ng-repeat="contact in SN.contacts"> 
+					<img src="{{contact.icon}}" alt="logo" class="icon">
 					<span class="link">{{contact.link}}</span> 
-				</li>
+				</li> 
 			</ul>
 		</div>
 	</div>
 
 	<!-- mask -->
-	<div class="mask"></div>
+	<div id="sideNavMask" class="hide"></div>
 
 </div>

@@ -2,22 +2,63 @@
 	position: relative;
 }
 
+#sideNav .open {
+	color: white;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: $lg;
+}
+
 #sideNav .contentWrap {
+	@include box-shadow;
 	background: $white;
-	padding: 20px 5%;
+	padding: 15px;
 	z-index: 1000;
 	position: fixed;
 	right: 0;
 	top: 0;
+	width: 100%;
 	height: 100%;
 	max-width: 100%;
-	@include box-shadow;
+	visibility: visible;
+	transition: 0.35s all ease-in-out;
+
+	@include tablet {
+		width: auto;
+	}
+
+
+	// hide by default;
+	&.hide {
+		visibility: hidden;
+	}
+	&.hide-remove {
+		right: -100%;
+	}
+	&.hide-remove-active {
+		right: 0;
+	}
+	&.hide-add{
+		right: 0;
+	}
+	&.hide-add-active{
+		right: -100%;
+	}
 }
 
 #sideNav .contentWrap .close {
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	font-size: $xl;
+	color: $blue;
+
+	@include desktop {
+		&:hover {
+			color: black;
+		}
+	}
 }
 
 #sideNav .contentWrap .titleWrap {
@@ -25,8 +66,8 @@
 	padding-bottom: $msm;
 
 	.img {
-		width: 80px;
-		height: 80px;
+		width: 100px;
+		height: 100px;
 		background: gray;
 		border-radius: 50%;
 		display: inline-block;
@@ -38,25 +79,83 @@
 		color: $blue;
 		text-transform: uppercase;
 		font-weight: bold;
+		padding: $msm 0;
 	}
 }
 
+
+// contacts =============================
 #sideNav .contactWrap .contacts {
 	margin-top: $med;
+
 	.contact {
-		background: $lightGray;
-		padding: $msm $med;
+		background: $blue;
+		padding: $msm;
 		margin-bottom: $msm;
-		border-bottom: 3px solid $blue;
-		border-radius: 5px;
+
+		display: flex;
+		align-items: center;
+
+		@include desktop {
+			&:hover {
+				background: darken($blue, 20%);
+			}
+		}
 	}
 
 	.icon {
-		color: $white;
+		width: 32px;
+		height: 32px;
+			
 	}
 	.link {
-		color: $blue;
-		padding-left: $med;
+		color: $white;
+		padding-left: $msm;
+		font-size: $med;
 	}
 
 }
+
+#sideNavMask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(250,250,250,0.75);
+	z-index: 999;
+	opacity: 1;
+	transition: 0.35s all ease-in-out;
+	transition-delay: 0.25s;
+	visibility: visible;
+	cursor: pointer;
+	// hide by default
+	
+	&.hide {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	&.hide-remove {
+		opacity: 0;
+	}
+	&.hide-remove-active {
+		opacity: 1; 
+	}
+	&.hide-add{
+		opacity: 1;
+	}
+	&.hide-add-active{
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
