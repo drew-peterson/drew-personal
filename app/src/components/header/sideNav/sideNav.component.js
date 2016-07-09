@@ -7,10 +7,10 @@ angular.module('MainHeader')
 		controller: function(){
 
 			this.contacts = [
-				{icon: '../images/linkedin.png', link: 'linkedin.com/in/drewmpeterson'},
-				{icon: '../images/github.png', link: 'github.com/weeznog '},
-				{icon: '../images/email.png', link: 'drew.m.peterson@gmail.com'},
-				{icon: '../images/phone.png', link: '425-765-9911'}
+				{icon: '../images/linkedin.png', link: 'linkedin.com/in/drewmpeterson', url: 'https://www.linkedin.com/in/drewmpeterson'},
+				{icon: '../images/github.png', link: 'github.com/weeznog', url: 'https://www.github.com/weeznog'},
+				{icon: '../images/email.png', link: 'drew.m.peterson@gmail.com', url: 'mailto:drew.m.peterson@gmail.com'},
+				{icon: '../images/phone.png', link: '425-765-9911', url: 'tel:425-765-9911'}
 			];
 		},
 		link: function(scope, elem, attrs, SN){

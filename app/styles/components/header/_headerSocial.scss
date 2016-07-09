@@ -7,12 +7,7 @@
 	width: 100%;
 }
 
-#mainHeader .headerSocial .img {
-	display: none;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-}
+
 
 #mainHeader .headerSocial .iconWrap {
 	display: flex;
@@ -20,19 +15,8 @@
 
 	.icon {
 		background: gray;
-		height: 40px;
+		height: 30px;
 		width: 25%;
-		line-height: 40px;
-		text-align: center;
-		color: white;
-		cursor: pointer;
-
-		&:hover {
-			@include desktop {
-				transition: all 0.35s ease-in-out;
-			}
-		}
-
 		
 		&:nth-child(1){
 			background: darken(gray, 10%);

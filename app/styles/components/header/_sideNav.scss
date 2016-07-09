@@ -3,11 +3,24 @@
 }
 
 #sideNav .open {
+	cursor: pointer;
 	color: white;
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	font-size: $lg;
+
+	@include tablet {
+		font-size: $xl;
+		right: 30px;
+	}
+
+	@include desktop {
+		transition: 0.35s all ease-in-out;
+		&:hover {
+			color: $blue;
+		}
+	}
 }
 
 #sideNav .contentWrap {
@@ -53,6 +66,7 @@
 	right: 20px;
 	font-size: $xl;
 	color: $blue;
+	cursor: pointer;
 
 	@include desktop {
 		&:hover {
@@ -62,8 +76,11 @@
 }
 
 #sideNav .contentWrap .titleWrap {
-	border-bottom: 3px solid $gray;
-	padding-bottom: $msm;
+	// border-bottom: 3px solid $gray;
+	// padding-bottom: $msm;
+	@include tablet {
+		padding-top: $med;
+	}
 
 	.img {
 		width: 100px;
@@ -71,6 +88,7 @@
 		background: gray;
 		border-radius: 50%;
 		display: inline-block;
+
 	}
 
 	.title {
@@ -80,6 +98,10 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		padding: $msm 0;
+		@include tablet {
+			font-size: $lg;
+			font-weight: normal;
+		}
 	}
 }
 
@@ -98,6 +120,7 @@
 
 		@include desktop {
 			&:hover {
+				transition: 0.35s background ease-in-out;
 				background: darken($blue, 20%);
 			}
 		}
@@ -105,13 +128,16 @@
 
 	.icon {
 		width: 32px;
-		height: 32px;
-			
 	}
+
 	.link {
 		color: $white;
 		padding-left: $msm;
 		font-size: $med;
+
+		@include tablet {
+			font-weight: bold;
+		}
 	}
 
 }

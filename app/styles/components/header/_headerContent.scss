@@ -17,6 +17,7 @@
 	.contentWrapper {
 		@include tablet {
 			margin-top: auto;
+			padding-bottom: $lg;
 		}
 	}
 

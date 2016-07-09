@@ -1,7 +1,7 @@
 <div id="sideNav">
 	
-	<!-- hamburger btn -->
-	<i class="material-icons open">&#xE5D2;</i>
+	<!-- contacts side nav -->
+	<i class="material-icons open">contacts</i>
 
 	<!-- hidden by default -->
 	<div class="contentWrap hide">
@@ -15,10 +15,12 @@
 		<!-- contact -->
 		<div class="contactWrap"> 
 			<ul class="contacts">
-				<li class="contact" ng-repeat="contact in SN.contacts"> 
+
+				<a class="contact" href="{{contact.url}}" target="newTab" ng-repeat="contact in SN.contacts">
 					<img src="{{contact.icon}}" alt="logo" class="icon">
 					<span class="link">{{contact.link}}</span> 
-				</li> 
+				</a>				
+
 			</ul>
 		</div>
 	</div>
