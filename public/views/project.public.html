@@ -11,8 +11,17 @@
 			<h2 class="name">{{project.name}}</h2>
 			
 			<div class="iconWrap">
-				<a class="icon" href="{{project.url.url}}">W</a> 
-				<a class="icon" href="{{project.github.url}}">G</a> 
+				<a class="icon web" href="{{project.url}}" target="newTab" ng-mouseover="w=true;" ng-mouseleave="w=false;">
+					<i class="material-icons">language</i>
+				</a>
+
+				<a class="icon github" href="{{project.github}}" target="newTab" ng-mouseover="g=true;" ng-mouseleave="g=false;">
+				</a> 
+			</div>
+
+			<div class="hoverWrap">
+				<span ng-class="{show: w}" class="hover website">website</span>
+				<span ng-class="{show: g}" class="hover github">github</span>
 			</div>
 
 			<p class="description">{{project.description}}</p>

@@ -76,15 +76,100 @@
 
 .project .content .iconWrap {
 	padding: $msm 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	.icon {
 		display: inline-block;
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		text-align: center;
-		background: $lightGray;
-		border-radius: 50%;
+		&.web {
+			height: 32px;
+			width: 32px;
+			i {
+				color: $gray;
+				font-size: 35px;
+				@include desktop {
+					&:hover {
+						transition: 0.35s all ease-in-out;
+						color: $black;
+					}
+				}
+			}
+		}
+		&.github {
+			height: 32px;
+			width: 32px;
+			margin-left: $msm;
+			background-color: $gray;
+			-webkit-mask-image: url('../images/github.png');
+			mask-repeat: no-repeat;
+
+			@include desktop {
+				&:hover {
+					transition: 0.35s all ease-in-out;
+					background-color: $black;
+				}
+			}
+		}
+	}
+}
+
+// show hover ======
+.project .iconWrap .icon:hover + .hoverWrap .hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+// hover =========
+.project .hoverWrap {
+	.hover {
+		position: absolute;
+		display: inline-block;
+		background: $blue;
 		color: $white;
+		padding: $sm;
+
+		transition: 0.35s all ease-in-out;
+		transition-delay: 0.4s;
+
+		opacity: 0;
+		visibility: hidden;
+
+		&.website {
+			left: 33%;
+
+			@include desktop {
+				&.show {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+
+		&.github {
+			left: 48%;
+
+			@include desktop {
+				&.show {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.hover:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $blue;
 	}
 }
 
