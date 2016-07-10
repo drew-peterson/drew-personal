@@ -8,10 +8,9 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	font-size: $lg;
+	font-size: $xl;
 
 	@include tablet {
-		font-size: $xl;
 		right: 30px;
 	}
 

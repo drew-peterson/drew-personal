@@ -1,4 +1,20 @@
 
+.main-content {
+	h1 {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: $med;
+		text-align: center;
+		background: gray;
+		color: $white;
+
+		@include tablet {
+			// text-align: left;
+		}
+	}
+}
+
+
 .projectsWrap {
 	@include tablet {
 		display: flex;
@@ -80,66 +96,58 @@
 	justify-content: center;
 
 	.icon {
-		display: inline-block;
+		position: relative;
+		height: 34px;
 		&.web {
 			i {
 				color: $black;
 				font-size: 37px;
+				margin-top: -2px; // align w/ top...
 			}
 		}
 		&.github {
 			margin-left: $msm;
-			
 			img {
 				height: 32px;
 			}
 		}
-	}
-}
+		// hover ======================
+		& .hover {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -50px;
+			padding: $sm;
+			background: $blue;
+			color: $white;
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.35s all ease-in-out;
+			transition-delay: 0.5s;
 
-// show hover ======
-.project .iconWrap .icon:hover + .hoverWrap .hover {
-	visibility: visible;
-	opacity: 1;
-}
-
-// hover =========
-.project .hoverWrap {
-	position: relative;
-	.hover {
-		position: absolute;
-		display: inline-block;
-		background: $blue;
-		color: $white;
-		padding: $sm; 
-
-		transition: 0.35s all ease-in-out;
-		transition-delay: 0.4s;
-
-		opacity: 0;
-		visibility: hidden;
-
-		&.website {
-			left: 33%;
-			@include desktop {
-				&.show {
-					visibility: visible;
-					opacity: 1;
-				}
+			&:before {
+				content: '';
+				position: absolute;
+				top: -8px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0; 
+				height: 0; 
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: 8px solid $blue;
 			}
 		}
-
-		&.github {
-			left: 48%;
-			@include desktop {
-				&.show {
-					visibility: visible;
-					opacity: 1;
-				}
+		// display hover
+		@include desktop {
+			&:hover .hover {
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 	}
 }
+
 
 
 

@@ -2,7 +2,7 @@
 
 <div class="main-content" style="padding-top: 60px;" ng-controller="projects as projectCtrl"> 
 	
-	<h1>Websites</h1>
+	<!-- <h1>Website</h1> -->
 
 	<div class="projectsWrap">
 		<!-- projects -->
@@ -10,7 +10,9 @@
 	</div>
 
 	<h1>Side Projects</h1>
-
-	<div class="sideProjectWrap"></div>
+	<!-- side projects -->
+	<div class="projectsWrap">
+		<project ng-repeat="project in projectCtrl.projects"></project>
+	</div>
 
 </div>
