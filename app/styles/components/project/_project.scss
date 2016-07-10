@@ -75,7 +75,6 @@
 }
 
 .project .content .iconWrap {
-	padding: $msm 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -83,32 +82,16 @@
 	.icon {
 		display: inline-block;
 		&.web {
-			height: 32px;
-			width: 32px;
 			i {
-				color: $gray;
-				font-size: 35px;
-				@include desktop {
-					&:hover {
-						transition: 0.35s all ease-in-out;
-						color: $black;
-					}
-				}
+				color: $black;
+				font-size: 37px;
 			}
 		}
 		&.github {
-			height: 32px;
-			width: 32px;
 			margin-left: $msm;
-			background-color: $gray;
-			-webkit-mask-image: url('../images/github.png');
-			mask-repeat: no-repeat;
-
-			@include desktop {
-				&:hover {
-					transition: 0.35s all ease-in-out;
-					background-color: $black;
-				}
+			
+			img {
+				height: 32px;
 			}
 		}
 	}
@@ -122,12 +105,13 @@
 
 // hover =========
 .project .hoverWrap {
+	position: relative;
 	.hover {
 		position: absolute;
 		display: inline-block;
 		background: $blue;
 		color: $white;
-		padding: $sm;
+		padding: $sm; 
 
 		transition: 0.35s all ease-in-out;
 		transition-delay: 0.4s;
@@ -137,7 +121,6 @@
 
 		&.website {
 			left: 33%;
-
 			@include desktop {
 				&.show {
 					visibility: visible;
@@ -148,7 +131,6 @@
 
 		&.github {
 			left: 48%;
-
 			@include desktop {
 				&.show {
 					visibility: visible;
@@ -156,20 +138,6 @@
 				}
 			}
 		}
-	}
-
-	.hover:after {
-		content: '';
-		display: block;
-		position: absolute;
-		top: -10px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 0; 
-		height: 0; 
-		border-left: 10px solid transparent;
-		border-right: 10px solid transparent;
-		border-bottom: 10px solid $blue;
 	}
 }
 
@@ -179,14 +147,15 @@
 .project .tags {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 
 	.tag {
+		flex: 1;
 		display: inline-block;
 		padding: $sm $msm;
 		background: $blue;
 		color: $white;
-		margin-bottom: $sm;
+		margin-bottom: $msm;
+		margin-left: $msm;
 		border-bottom: 3px solid $gray;
 		border-radius: $sm;
 
