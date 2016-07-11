@@ -13,6 +13,7 @@
 	}
 
 	.tab {
+		cursor: pointer;
 		display: inline-block;
 		padding: $msm;
 		font-size: 1rem;
@@ -40,12 +41,27 @@
 
 
 .projectsWrap {
+	overflow-x: hidden; 
 	@include tablet {
 		display: flex;
 		width: 90%;
 		margin: 0 auto;
 		flex-wrap: wrap;
 		justify-content: space-between;
+	}
+
+	// animation =====
+	transition: 0.5s all ease;
+	&.ng-enter {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	&.ng-enter.ng-enter-active {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	&.ng-leave {
+		transition: 0s all ease;
 	}
 }
 
