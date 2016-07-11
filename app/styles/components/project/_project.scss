@@ -47,10 +47,6 @@
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
-
-		@include desktop {
-			background-size: contain; 
-		}
 	}
 
 	@include desktop__large {

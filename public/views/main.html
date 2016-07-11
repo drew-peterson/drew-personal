@@ -3,16 +3,24 @@
 <div class="main-content" style="padding-top: 60px;" ng-controller="projects as projectCtrl"> 
 	
 	<!-- <h1>Website</h1> -->
-
-	<div class="projectsWrap">
+	
+	<div class="selector">
+		
 		<!-- projects -->
-		<project ng-repeat="project in projectCtrl.projects"></project>
+		<div class="tab website selected">
+			<div class="projectsWrap">
+				<project ng-repeat="project in projectCtrl.projects"></project>
+			</div>
+		</div>		
+
+		<!-- side projects -->
+		<div class="tab sideProject">
+			<div class="projectsWrap">
+				<project ng-repeat="project in projectCtrl.sideProjects"></project>
+			</div>
+		</div>
 	</div>
 
-	<h1>Side Projects</h1>
-	<!-- side projects -->
-	<div class="projectsWrap">
-		<project ng-repeat="project in projectCtrl.sideProjects"></project>
-	</div>
+
 
 </div>
