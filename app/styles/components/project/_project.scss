@@ -1,14 +1,42 @@
 
-.main-content {
-	h1 {
-		width: 90%;
-		margin: $xl auto;
-		margin-bottom: $lg;
+
+// Tab ============================
+.main-content .tabContainer {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: $med;
+	text-align: center;
+	display: flex;
+
+	@include tablet {
+		text-align: left;
+	}
+
+	.tab {
+		display: inline-block;
+		padding: $msm;
+		font-size: 1rem;
+		border: 2px solid $blue;
+		color: $blue;
+		width: 49%;
 		text-align: center;
-		background: gray;
+
+		@include tablet {
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: $med;
+			width: auto;
+			font-size: 1.2rem;
+			width: 200px;
+		}
+	}
+	.tab.selected {
+		background: $blue;
 		color: $white;
+		border: 2px solid $blue;
 	}
 }
+
 
 
 .projectsWrap {
