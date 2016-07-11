@@ -2,15 +2,11 @@
 .main-content {
 	h1 {
 		width: 90%;
-		margin: 0 auto;
-		margin-bottom: $med;
+		margin: $xl auto;
+		margin-bottom: $lg;
 		text-align: center;
 		background: gray;
 		color: $white;
-
-		@include tablet {
-			// text-align: left;
-		} 
 	}
 }
 
@@ -43,6 +39,7 @@
 
 .project .imgWrap {
 	height: 200px;
+	width: 100%;
 
 	.img {
 		background-size: contain;
@@ -50,6 +47,10 @@
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
+	}
+
+	@include desktop__large {
+		height: 300px;
 	}
 }
 
@@ -67,6 +68,11 @@
 	@include box-shadow-med();
 	text-align: center;
 	
+	@include desktop__large {
+		top: -120px;
+		min-height: 300px;
+	}
+
 	.name {
 		font-size: 1.5rem;
 		color: $blue;
@@ -156,9 +162,10 @@
 .project .tags {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	.tag {
-		flex: 1;
+		// flex: 1;
 		display: inline-block;
 		padding: $sm $msm;
 		background: $blue;

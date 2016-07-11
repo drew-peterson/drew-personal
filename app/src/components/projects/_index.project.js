@@ -46,6 +46,14 @@ angular.module('Projects',[])
 					description: 'Clone of google product OnHub',
 					tags: ['Angular', 'Node', 'Express', 'Gulp', 'Sass']
 				},
+					{
+					img: '../images/potato.png',
+					name: 'Personal Website',
+					url: 'https://potato-quick-app.herokuapp.com/',
+					github:'https://github.com/weeznog/potato-quick-app',
+					description: 'My Personal Website, showing off my best work!!!',
+					tags: ['Angular', 'Node', 'Express', 'Gulp', 'Sass']
+				},
 			];
 
 
