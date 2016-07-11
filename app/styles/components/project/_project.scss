@@ -10,7 +10,7 @@
 
 		@include tablet {
 			// text-align: left;
-		}
+		} 
 	}
 }
 
@@ -45,8 +45,9 @@
 	height: 200px;
 
 	.img {
-		background-size: cover;
+		background-size: contain;
 		background-position: 50% 50%;
+		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
 	}
