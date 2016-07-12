@@ -21,6 +21,14 @@
 			color: $blue;
 		}
 	}
+
+	&.scrolled {
+		z-index: 1001; // over scroll header
+		position: fixed;
+		font-size: $lg;
+		top: 10px;
+		right: 5%;
+	}
 }
 
 #sideNav .contentWrap {

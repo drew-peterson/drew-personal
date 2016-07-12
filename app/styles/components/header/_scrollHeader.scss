@@ -1,0 +1,28 @@
+#scrollHeader {
+	background: $blue;
+	color: $white;
+	padding: 0 5%;
+	height: 50px;
+	width: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+#scrollHeader .left {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	.img {
+		height: 40px;
+		width: 40px;
+		border-radius: 50%; 
+	}
+
+	.name {
+		margin-left: $med;
+		text-transform: uppercase;
+	}
+}
