@@ -1,4 +1,11 @@
-	<div class="tabContainer" ng-init="website= true;">
-		<span class="tab" ng-click="website = !website" ng-class="{selected: website}">Websites</span>
-		<span class="tab" ng-click="sideProject = !sideProject" ng-class="{selected: sideProject}">Side Projects</span>
+	<div class="tabContainer">
+		<span class="tab" 
+		ng-click="Tabs.changeTab(0)"
+		ng-class="{selected: Tabs.website}"
+		>Websites</span>
+
+		<span class="tab" 
+		ng-click="Tabs.changeTab(1)"
+		ng-class="{selected: Tabs.sideProject}"
+		>Side Projects</span>
 	</div> 
