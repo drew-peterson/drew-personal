@@ -1,4 +1,7 @@
 
+.main-content {
+	background: $lightGray;
+}
 
 // Tab ============================
 .main-content .tabContainer {
@@ -13,6 +16,7 @@
 	}
 
 	.tab {
+		background: $white;
 		cursor: pointer;
 		display: inline-block;
 		padding: $msm;
@@ -66,7 +70,7 @@
 }
 
 .project {
-	background: $white;
+	// background: $white;
 	margin-bottom: $xxl; 
 	@include tablet {
 		width: 48%;
@@ -79,13 +83,14 @@
 .project .contentWrapper {
 	position: relative;
 	height: 100%;
+
 }
 
 .project .imgWrap {
 	height: 200px;
 	width: 100%;
-
 	.img {
+
 		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
@@ -109,7 +114,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 0px;
-	padding: 10px;
+	padding: $mlg $msm;
 	text-align: center;
 
 	@include tablet {
@@ -135,7 +140,7 @@
 	}
 
 	&:after {
-		content: '';
+		// content: '';
 		display: block;
 		position: absolute;
 		left: -15px;
