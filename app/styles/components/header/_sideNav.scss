@@ -1,5 +1,6 @@
 #sideNav {
 	position: relative;
+	z-index: 1000;
 }
 
 #sideNav .open {
@@ -23,12 +24,22 @@
 	}
 
 	&.scrolled {
-		z-index: 1001; // over scroll header
+		animation: scrolled;
+		animation-duration: 1s;
+		z-index: 901; // over scroll header
 		position: fixed;
 		font-size: $lg;
 		top: 10px;
 		right: 5%;
 	}
+}
+
+@keyframes scrolled {
+	0% {opacity: 0;}
+	25% {opacity: 0;}
+	50% {opacity: 0;}
+	75% {opacity: 0.5;}
+	100% {opacity: 1;}
 }
 
 #sideNav .contentWrap {
