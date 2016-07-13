@@ -71,7 +71,7 @@
 
 .project {
 	// background: $white;
-	margin-bottom: $xxl; 
+	margin-bottom: $xl; 
 	@include tablet {
 		width: 48%;
 	}
@@ -90,7 +90,6 @@
 	height: 200px;
 	width: 100%;
 	.img {
-
 		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
@@ -99,7 +98,7 @@
 	}
 
 	@include desktop__large {
-		height: 300px;
+		min-height: 300px; 
 	}
 }
 
@@ -108,7 +107,7 @@
 	@include box-shadow-med();
 	background: $white;
 	position: relative;
-	top: -60px;
+	top: -90px;
 	margin-bottom: -60px;
 	width: 90%;
 	left: 50%;
@@ -118,7 +117,7 @@
 	text-align: center;
 
 	@include tablet {
-		height: 300px;
+		min-height: 350px;
 	}
 	
 	@include desktop__large {

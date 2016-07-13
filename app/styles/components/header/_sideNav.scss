@@ -23,6 +23,7 @@
 		}
 	}
 
+	// when scrolled appears in navbar
 	&.scrolled {
 		animation: scrolled;
 		animation-duration: 1s;
@@ -31,6 +32,11 @@
 		font-size: $lg;
 		top: 10px;
 		right: 5%;
+
+		@include tablet {
+			top: calc(70px - $xl) / 2; 
+			font-size: $xl;
+		}
 	}
 }
 

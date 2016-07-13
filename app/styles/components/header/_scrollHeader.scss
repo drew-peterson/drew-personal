@@ -29,6 +29,10 @@
 		top: -60px;
 		opacity: 0;
 	}
+
+	@include tablet {
+		height: 70px;
+	}
 }
 
 #scrollHeader .left {
@@ -38,11 +42,20 @@
 	.img {
 		height: 40px;
 		width: 40px;
-		border-radius: 50%; 
+		border-radius: 50%;
+
+		@include tablet {
+			height: 50px;
+			width: 50px;
+		} 
 	}
 
 	.name {
 		margin-left: $med;
 		text-transform: uppercase;
+
+		@include tablet {
+			font-size: 1.3rem;
+		}
 	}
 }

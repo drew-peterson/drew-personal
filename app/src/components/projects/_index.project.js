@@ -39,18 +39,18 @@ angular.module('Projects',[])
 					tags: ['Angular', 'Node', 'Express', 'Flickr Api', 'Gulp', 'Sass']
 				},
 				{
-					img: '../images/potato.png',
+					img: '../images/onhub.png',
 					name: 'On Hub Clone',
-					url: 'https://potato-quick-app.herokuapp.com/',
-					github:'https://github.com/weeznog/potato-quick-app',
+					url: 'https://onhub-clone.herokuapp.com/',
+					github:'https://github.com/weeznog/onhub-clone',
 					description: 'Clone of google product OnHub',
-					tags: ['Angular', 'Node', 'Express', 'Gulp', 'Sass']
+					tags: ['Angular', 'Node', 'Express', 'Gulp', 'Sass'] 
 				},
 					{
-					img: '../images/potato.png',
+					img: '../images/personal.png',
 					name: 'Personal Website',
-					url: 'https://potato-quick-app.herokuapp.com/',
-					github:'https://github.com/weeznog/potato-quick-app',
+					url: 'drewpeterson.me',
+					github:'https://github.com/weeznog/drew-personal',
 					description: 'My Personal Website, showing off my best work!!!',
 					tags: ['Angular', 'Node', 'Express', 'Gulp', 'Sass']
 				},
