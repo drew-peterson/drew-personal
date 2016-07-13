@@ -7,7 +7,7 @@ angular.module('MainHeader')
 			var HC = this;
 			HC.name = "Drew Peterson";
 			HC.title = "FrontEnd Developer";
-			HC.img = "https://lh3.googleusercontent.com/rdg7kc1Uftgsg8xLiNcCYljQ52mvepBA1j-JHJpsAiIq0qu5L3k6D4GWkj1QxEYKtkyoVTB_m4E=w5120-h3200-rw-no";
+			HC.img = "../images/profile-picture.jpg";
 		},
 		controllerAs: 'HC',
 		templateUrl: '../views/headerContent.public.html' 

@@ -5,7 +5,7 @@ angular.module('MainHeader')
 		controller: function(){
 			var HS = this;
 
-			HS.img = "https://lh3.googleusercontent.com/rdg7kc1Uftgsg8xLiNcCYljQ52mvepBA1j-JHJpsAiIq0qu5L3k6D4GWkj1QxEYKtkyoVTB_m4E=w5120-h3200-rw-no";
+			HS.img = "../images/profile-picture.jpg";
 
 
 			HS.selectDetail = function(idx){

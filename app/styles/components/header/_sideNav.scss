@@ -110,7 +110,9 @@
 	.img {
 		width: 100px;
 		height: 100px;
-		background: gray;
+		background-image: url('../images/profile-picture.jpg');
+		background-size: contain;
+		background-positin: center;
 		border-radius: 50%;
 		display: inline-block;
 

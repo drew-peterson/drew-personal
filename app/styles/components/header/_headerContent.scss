@@ -22,12 +22,16 @@
 	}
 
 	.img{
-		width: 40%; 
+		width: 100px; 
 		margin-bottom: 10px;
 		border-radius: 50%;
 
 		@include tablet {
-			width: 50%;
+			width: 140px;
+		}
+
+		@include desktop {
+			width: 170px;
 		}
 	}
 	
