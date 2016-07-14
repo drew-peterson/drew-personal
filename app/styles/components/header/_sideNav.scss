@@ -19,7 +19,7 @@
 		font-size: $xxl;
 		transition: 0.35s all ease-in-out;
 		&:hover {
-			color: $blue;
+			color: $black;
 		}
 	}
 
@@ -36,6 +36,10 @@
 		@include tablet {
 			top: calc(70px - $xl) / 2; 
 			font-size: $xl;
+		}
+
+		@include desktop__large {
+			right: 10%;
 		}
 	}
 }
