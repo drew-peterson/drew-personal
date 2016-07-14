@@ -13,7 +13,7 @@ angular.module('Projects',[])
 				},
 				{
 					img: '../images/lafayettefashionista.jpg',
-					name: 'Lafayete Fashionista',
+					name: 'Lafayette Fashionista',
 
 					url: 'http://www.lafayettefashionista.com',
 					github: 'http://github.com/weeznog/lafayettefashionista',
