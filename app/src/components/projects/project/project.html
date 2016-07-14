@@ -26,6 +26,8 @@
 			<div class="tags">
 				<span class="tag" ng-repeat="tag in project.tags">{{tag}}</span>
 			</div>
+
+			<div class="status" ng-class="project.status[1]">{{project.status[0]}}</div>
 		</div> 
 	</div>
 </div>

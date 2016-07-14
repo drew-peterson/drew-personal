@@ -231,5 +231,25 @@
 }
 
 
+.project .status {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: $white;
+	padding: $msm 0;
+
+	&.wip {
+		background: #FF5722;
+	}
+	&.canceled {
+		background: #F44336;
+	}
+	&.complete {
+		background: #689F38;
+	}
+}
+
+
 
 
