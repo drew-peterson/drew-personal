@@ -113,11 +113,12 @@
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 0px;
-	padding: $mlg $msm;
+	padding: $mlg $msm 60px;
 	text-align: center;
 
 	@include tablet {
 		min-height: 350px;
+		padding-bottom: 40px; // height of status
 	}
 	
 	@include desktop__large {
