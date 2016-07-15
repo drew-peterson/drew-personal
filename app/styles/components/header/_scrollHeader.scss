@@ -4,16 +4,22 @@
 	padding: 0 5%;
 	height: 50px;
 	width: 100%;
+	z-index: 900;
+	max-width: 1680px;
+
+	display: flex;
+	align-items: center;
 
 	position: fixed;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	z-index: 900;
 
-	max-width: 1680px;
+	@include tablet {
+		height: 70px;
+	}
 
-	// animation
+	// animation ====================
 	transition: 0.75s all ease-in-out;
 
 	&.ng-enter{
@@ -33,16 +39,13 @@
 		opacity: 0;
 	}
 
-	@include tablet {
-		height: 70px;
-	}
 }
 
-#scrollHeader .left {
-	display: flex;
-	align-items: center;
-	height: 100%;
+// content
+#scrollHeader  {
+
 	.img {
+		font-size: 0;
 		height: 40px;
 		width: 40px;
 		border-radius: 50%;
