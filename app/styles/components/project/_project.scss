@@ -175,7 +175,7 @@
 			img {
 				height: 32px;
 			}
-		}
+		} 
 		// hover ======================
 		& .hover {
 			position: absolute;
@@ -188,7 +188,7 @@
 			opacity: 0;
 			visibility: hidden;
 			transition: 0.35s all ease-in-out;
-			transition-delay: 0.5s;
+			transition-delay: 0.5s; 
 
 			&:before {
 				content: '';
