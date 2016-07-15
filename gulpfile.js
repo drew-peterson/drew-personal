@@ -10,9 +10,6 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var flatten = require('gulp-flatten');
 
-var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
-
-
 // JS
 var srcFiles = ['app/App.js', 'app/src/**/*js'];
 gulp.task('js', function () { 
@@ -33,7 +30,7 @@ gulp.task('styles', function(){
 	.pipe(maps.init())
 	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: autoPrefixBrowserList,
+		browsers: ['last 2 versions'],
 		cascade: false
 	}))
 	.pipe(maps.write('./'))
