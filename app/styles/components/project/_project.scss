@@ -4,6 +4,7 @@
 }
 
 // Tab ============================
+
 .main-content .tabContainer {
 	width: 90%;
 	margin: 0 auto;
@@ -47,10 +48,14 @@
 .projectsWrap {
 	overflow-x: hidden; 
 	@include tablet {
-		display: flex;
 		width: 90%;
 		margin: 0 auto;
+
+		display: flex;
+		display: -webkit-flex;
+		
 		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
