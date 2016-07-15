@@ -34,7 +34,8 @@
 		right: 5%;
 
 		@include tablet {
-			top: calc(70px - $xl) / 2; 
+			top: 11px;
+			// top: calc(70px - $xl) / 2; 
 			font-size: $xl;
 		}
 
