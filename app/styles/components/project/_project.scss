@@ -121,7 +121,7 @@
 
 	@include tablet {
 		min-height: 390px;
-		padding-bottom: 40px; // height of status
+		padding: $mlg $med 40px;
 	}
 	
 	@include desktop__large {
@@ -135,11 +135,20 @@
 		margin-top: $msm;
 		// text-transform: uppercase;
 		line-height: 1;
+
+		@include desktop {
+			margin-bottom: $med;
+			font-size: 1.7rem;
+		}
 	}
 	.description {
-		line-height: 1.25;
+		line-height: 1.5;
 		margin: $mlg 0;
 		color: $gray;
+
+		@include desktop {
+			font-size: 1.1rem;
+		}
 	}
 
 	&:after {
@@ -220,6 +229,7 @@
 .project .tags {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	.tag {
 		// flex: 1;
