@@ -1,18 +1,18 @@
 <main-header></main-header>
 
-<div class="main-content" style="padding-top: 60px;" ng-controller="projects as projectCtrl"> 
+<div class="main-content" style="padding-top: 60px;"> 
 	
 	<!-- tabs -->
 	<tabs></tabs>  
 
 	<!-- website -->
-	<div class="projectsWrap" ng-if="Tabs.website">
-		<project ng-repeat="project in projectCtrl.projects"></project>
+	<div class="projectsWrap" ng-if="Tabs.website" ng-controller="ProjectCtrl as $ctrl">
+		<project ng-repeat="project in $ctrl.projects" project="project" project="project"></project>
 	</div>
 
 	<!-- side projects -->
-	<div class="projectsWrap" ng-if="Tabs.sideProject">
-		<project ng-repeat="project in projectCtrl.sideProjects"></project>
+	<div class="projectsWrap" ng-if="Tabs.sideProject" ng-controller="ProjectCtrl as $ctrl">
+		<project ng-repeat="project in $ctrl.sideProjects" project="project"></project>
 	</div> 
 
 </div>

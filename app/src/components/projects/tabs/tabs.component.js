@@ -1,4 +1,4 @@
-angular.module('Projects')
+angular.module('DrewPersonalSiteApp')
 .directive('tabs', function(){
 	return {
 		replace: true,

@@ -3,31 +3,31 @@
 	<div class="contentWrapper">
 		<!-- image -->
 		<div class="imgWrap">
-			<div class="img" ng-style="{'background-image': 'url({{project.img}})'}"></div> 
+			<div class="img" ng-style="{'background-image': 'url({{$ctrl.project.img}})'}"></div> 
 		</div>
 
 		<!-- content -->
 		<div class="content">
-			<h2 class="name">{{project.name}}</h2>
+			<h2 class="name">{{$ctrl.project.name}}</h2>
 			
 			<div class="iconWrap">
-				<a class="icon web" href="{{project.url}}" target="newTab">
+				<a class="icon web" href="{{$ctrl.project.url}}" target="newTab">
 					<i class="material-icons">language</i>
 					<span class="hover">website</span>
 				</a>
 
-				<a class="icon github" href="{{project.github}}" target="newTab" ng-mouseover="g=true;">
+				<a class="icon github" href="{{$ctrl.project.github}}" target="newTab" ng-mouseover="g=true;">
 				<img src="../images/github-dark.png" alt="">
 				<span class="hover">GitHub</span>
 				</a> 
 			</div>
 
-			<p class="description">{{project.description}}</p>
+			<p class="description">{{$ctrl.project.description}}</p>
 			<div class="tags">
-				<span class="tag" ng-repeat="tag in project.tags">{{tag}}</span>
+				<span class="tag" ng-repeat="tag in $ctrl.project.tags">{{tag}}</span>
 			</div>
 
-			<div class="status" ng-class="project.status[1]">{{project.status[0]}}</div>
+			<div class="status" ng-class="$ctrl.project.status[1]">{{$ctrl.project.status[0]}}</div>
 		</div> 
 	</div>
 </div>
