@@ -1,4 +1,5 @@
 
+// test 
 .main-content {
 	background: $lightGray;
 }
@@ -72,7 +73,8 @@
 	}
 }
 
-.project {
+// style project component
+[project] {
 	// background: $white;
 	margin-bottom: $xl; 
 	@include tablet {
@@ -81,6 +83,10 @@
 	@include desktop {
 		width: 32%;
 	}
+}
+
+.project {
+	width: 100%;
 }
 
 .project .contentWrapper {
