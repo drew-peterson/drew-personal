@@ -1,10 +1,9 @@
 
 var app = angular.module('DrewPersonalSiteApp');
 app.controller('ProjectCtrl', function(){
+	var self = this;
 
-	this.test = "drew peterson"
-
-	this.projects = [
+	self.projects = [
 			{
 				img: '../images/wholesale.png',
 				name: 'Pacifica Coffee Wholesale',
@@ -38,7 +37,7 @@ app.controller('ProjectCtrl', function(){
 
 		// side Projects
 
-		this.sideProjects = [ 
+		self.sideProjects = [ 
 			{
 				img: '../images/potato.png',
 				name: 'Potato Quick App', 
