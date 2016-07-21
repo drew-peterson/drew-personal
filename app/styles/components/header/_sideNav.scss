@@ -151,8 +151,8 @@
 		align-items: center;
 
 		@include desktop {
-			&:hover {
 				transition: 0.35s background ease-in-out;
+			&:hover {
 				background: darken($blue, 20%);
 			}
 		}
