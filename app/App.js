@@ -3,7 +3,7 @@
 
 	var app = angular.module('DrewPersonalSiteApp',
 		[
-		'MainHeader',
+		'Navigation',
 		'ngAnimate'
 		]
 	);   

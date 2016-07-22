@@ -1,15 +1,19 @@
-angular.module('MainHeader')
-.directive('headerContent',function(){ 
-	return {
-		replace: true,
-		transclude: true,
-		controller: function(){
-			var HC = this;
-			HC.name = "Drew Peterson";
-			HC.title = "FrontEnd Developer";
-			HC.img = "../images/profile-picture.jpg";
-		},
+(function(){
+	'use strict';
+
+	var nav = angular.module('Navigation');
+
+	nav.component('headerContent', {
+		controller: headerContentCtrl,
 		controllerAs: 'HC',
 		templateUrl: '../views/headerContent.public.html' 
-	} 
-})
+	});
+
+	function headerContentCtrl(){
+		var self = this;
+		
+		self.name = "Drew Peterson";
+		self.title = "FrontEnd Developer";
+		self.img = "../images/profile-picture.jpg";
+	};
+})();

@@ -1,4 +1,4 @@
-angular.module('MainHeader')
+angular.module('Navigation')
 .directive('sideNav', function($animate){
 	return { 
 		replace: true,

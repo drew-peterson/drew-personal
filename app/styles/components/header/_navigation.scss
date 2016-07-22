@@ -20,3 +20,32 @@
 		height: 65vh;
 	} 
 }
+
+#navDivider {
+	position: absolute;
+	height: 30px;
+	bottom: -30px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	span {
+		display: inline-block;
+		background: gray;
+		height: 100%;
+		width: 25%;
+		
+		&:nth-child(1){
+			background: darken(gray, 10%);
+		}
+		&:nth-child(2){
+			background: darken(gray, 20%);
+		}
+		&:nth-child(3){
+			background: darken(gray, 30%);
+		}
+		&:nth-child(4){
+			background: darken(gray, 40%);
+		}
+	}
+}
