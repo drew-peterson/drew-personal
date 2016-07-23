@@ -7,8 +7,8 @@ angular.module('Navigation')
 		controller: function(){
 
 			this.contacts = [
-				{icon: '../images/linkedin.png', link: 'linkedin.com/in/drewmpeterson', url: 'https://www.linkedin.com/in/drewmpeterson'},
-				{icon: '../images/github.png', link: 'github.com/weeznog', url: 'https://www.github.com/weeznog'},
+				{icon: '../images/linkedin.png', link: 'linkedin.com/in/drewmpeterson', url: 'http://bit.ly/2a8IDd6'},
+				{icon: '../images/github.png', link: 'github.com/weeznog', url: 'http://bit.ly/2akvcJ1'},
 				{icon: '../images/email.png', link: 'drew.m.peterson@gmail.com', url: 'mailto:drew.m.peterson@gmail.com'},
 				{icon: '../images/phone.png', link: '425-765-9911', url: 'tel:425-765-9911'}
 			];
