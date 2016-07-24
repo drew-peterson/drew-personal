@@ -30,7 +30,7 @@ app.controller('ProjectCtrl', function(){
 				url: 'http://bit.ly/29Wnmjw',
 				github:'http://bit.ly/2am8TzA',
 				description: 'E-commerce website with admin portal, shopping bag and checkout with Stripe api.',
-				tags: ['Rails', 'Ruby', 'Sass', 'JQuery', 'PostgresDB', 'Stipe Api'],
+				tags: ['Rails', 'Ruby', 'Sass', 'JQuery', 'PostgresDB', 'Stripe Api'],
 				status: ['Canceled','canceled']
 			}
 		]; 
