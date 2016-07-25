@@ -10,7 +10,7 @@ app.controller('ProjectCtrl', function(){
 
 				url: 'http://bit.ly/29SyL8t',
 				github:'http://bit.ly/2aiWhL4',
-				description: 'Small coffee roaster with a focus on wholesale customers only. Admin portal and shoping bag experience.',
+				description: 'Small coffee roaster with a focus on wholesale customers only. Admin portal and shopping bag experience.',
 				tags: ['Angular', 'Node', 'Express', 'MongoDB', 'Gulp', 'Sass'],
 				status: ['Work In Progress','wip']
 			},
